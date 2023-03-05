@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		953D9B5329B484AF002E3753 /* ImageCompressorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D9B5229B484AF002E3753 /* ImageCompressorApp.swift */; };
-		953D9B5529B484AF002E3753 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D9B5429B484AF002E3753 /* ContentView.swift */; };
+		953D9B5529B484AF002E3753 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D9B5429B484AF002E3753 /* RootView.swift */; };
 		953D9B5729B484B0002E3753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D9B5629B484B0002E3753 /* Assets.xcassets */; };
 		953D9B5A29B484B0002E3753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D9B5929B484B0002E3753 /* Preview Assets.xcassets */; };
 		953D9B6429B484B0002E3753 /* ImageCompressorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D9B6329B484B0002E3753 /* ImageCompressorTests.swift */; };
-		953D9B6E29B484B0002E3753 /* ImageCompressorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D9B6D29B484B0002E3753 /* ImageCompressorUITests.swift */; };
-		953D9B7029B484B0002E3753 /* ImageCompressorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D9B6F29B484B0002E3753 /* ImageCompressorUITestsLaunchTests.swift */; };
+		953D9B7F29B48F29002E3753 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D9B7E29B48F29002E3753 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +35,13 @@
 /* Begin PBXFileReference section */
 		953D9B4F29B484AF002E3753 /* ImageCompressor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCompressor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953D9B5229B484AF002E3753 /* ImageCompressorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompressorApp.swift; sourceTree = "<group>"; };
-		953D9B5429B484AF002E3753 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		953D9B5429B484AF002E3753 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		953D9B5629B484B0002E3753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953D9B5929B484B0002E3753 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		953D9B5F29B484B0002E3753 /* ImageCompressorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCompressorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		953D9B6329B484B0002E3753 /* ImageCompressorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompressorTests.swift; sourceTree = "<group>"; };
 		953D9B6929B484B0002E3753 /* ImageCompressorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCompressorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		953D9B6D29B484B0002E3753 /* ImageCompressorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompressorUITests.swift; sourceTree = "<group>"; };
-		953D9B6F29B484B0002E3753 /* ImageCompressorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompressorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		953D9B7E29B48F29002E3753 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,6 @@
 			children = (
 				953D9B5129B484AF002E3753 /* ImageCompressor */,
 				953D9B6229B484B0002E3753 /* ImageCompressorTests */,
-				953D9B6C29B484B0002E3753 /* ImageCompressorUITests */,
 				953D9B5029B484AF002E3753 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +91,8 @@
 		953D9B5129B484AF002E3753 /* ImageCompressor */ = {
 			isa = PBXGroup;
 			children = (
+				953D9B7D29B48A5C002E3753 /* Modules */,
 				953D9B5229B484AF002E3753 /* ImageCompressorApp.swift */,
-				953D9B5429B484AF002E3753 /* ContentView.swift */,
 				953D9B5629B484B0002E3753 /* Assets.xcassets */,
 				953D9B5829B484B0002E3753 /* Preview Content */,
 			);
@@ -118,13 +115,21 @@
 			path = ImageCompressorTests;
 			sourceTree = "<group>";
 		};
-		953D9B6C29B484B0002E3753 /* ImageCompressorUITests */ = {
+		953D9B7C29B48A50002E3753 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				953D9B6D29B484B0002E3753 /* ImageCompressorUITests.swift */,
-				953D9B6F29B484B0002E3753 /* ImageCompressorUITestsLaunchTests.swift */,
+				953D9B5429B484AF002E3753 /* RootView.swift */,
 			);
-			path = ImageCompressorUITests;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		953D9B7D29B48A5C002E3753 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				953D9B7C29B48A50002E3753 /* Home */,
+				953D9B7E29B48F29002E3753 /* ImagePicker.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953D9B5529B484AF002E3753 /* ContentView.swift in Sources */,
+				953D9B5529B484AF002E3753 /* RootView.swift in Sources */,
+				953D9B7F29B48F29002E3753 /* ImagePicker.swift in Sources */,
 				953D9B5329B484AF002E3753 /* ImageCompressorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,8 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953D9B6E29B484B0002E3753 /* ImageCompressorUITests.swift in Sources */,
-				953D9B7029B484B0002E3753 /* ImageCompressorUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +424,8 @@
 				DEVELOPMENT_TEAM = 8RJZHK334B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App needs camera permission to capture the photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App needs photo library permission to compress the photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +455,8 @@
 				DEVELOPMENT_TEAM = 8RJZHK334B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App needs camera permission to capture the photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App needs photo library permission to compress the photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
